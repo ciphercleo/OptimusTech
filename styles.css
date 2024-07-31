@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --text-color: #667085; /* Cor do texto padrão */
+    --main-color: #8E2424; /* Cor principal */
+    --dark-text-color: #101828; /* Cor preto meio azulado */
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente os itens da navbar */
+    margin: 35px 55px 0 55px;
+}
+
+header img {
+    width: 148px;
+}
+
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+    margin-left: 130px; /* Ajuste conforme necessário para controlar a distância entre a imagem e os links */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Espaço entre os links */
+}
+
+.navbar-btn {
+    display: flex;
+    gap: 25px; /* Espaço entre os botões */
+    margin-left: auto; /* Empurra os botões para o fim da navbar */
+    padding-right: 65px;
+}
+
+.navbar-links a,
+.navbar-btn a {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto dos links e botões */
+}
+
+#navbar-btn-cadastro {
+    color: rgb(255, 255, 255);
+    background-color: var(--main-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.about {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about span {
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.about h1 {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 96px;
+    text-align: center;
+}
+
+.metricas-container {
+    display: flex;
+    gap: 40px; 
+    justify-content: center;
+    margin: 0 30px 96px 30px;
+}
+
+.metricas-container-metrica {
+    gap: 12px;
+}
+
+.metricas-titulo {
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 12px;
+}
+
+.metricas-subtitulo {
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--dark-text-color);
+    margin-bottom: 10px;
+}
+
+.metricas-texto {
+    font-size: 16px;
+}
+
+.opiniao-colaborador h6,
+.opiniao-colaborador span,
+.opiniao-colaborador p,
+.opiniao-colaborador img {
+    background: none; /* Remove qualquer fundo branco dos elementos de texto */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.opiniao-colaborador {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 64px auto 96px auto; /* Centraliza a seção horizontalmente e define a margem superior e inferior */
+    background-color: #f0e6e6;
+    padding: 50px;
+    max-width: 1200px; /* Define uma largura máxima para o contêiner, ajuste conforme necessário */
+    width: 90%; /* Define a largura como uma porcentagem da largura da tela, ajustando para o espaço em branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar o contêiner, opcional */
+    border-radius: 8px; /* Adiciona bordas arredondadas, opcional */
+}
+
+.opiniao-colaborador h6 {
+    color: var(--main-color);
+}
+
+.opiniao-colaborador span {
+    font-size: 34px;
+    color: var(--dark-text-color);
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.opiniao-colaborador img {
+    margin-top: 32px;
+    width: 56px;
+    margin-bottom: 16px;
+}
+
+.opiniao-colaborador .nome-colaborador {
+    color: var(--dark-text-color); 
+}
+
+.opiniao-colaborador p {
+    margin-top: 5px;
+}
+
+.vagas {
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.vagas h6 {
+    color: var(--main-color);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.vagas span {
+    color: var(--dark-text-color);
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.vagas p {
+    margin-top: 16px;
+    margin-bottom: 45px;
+}
+
+.vagas img {
+    width: 1216px;
+    padding-bottom: 64px;
+}
+
+.vagas-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaçamento entre as seções de vagas */
+}
+
+.vagas-design,
+.vagas-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaçamento entre as vagas */
+    margin: 0 auto; /* Centraliza os contêineres de vagas */
+    max-width: 100%; /* Remove a largura máxima para ocupar mais espaço */
+    width: 100%; /* Garante que o contêiner ocupe a largura total */
+    align-items: center; /* Centraliza os itens filhos dentro do contêiner */
+    padding: 0 20px; /* Adiciona algum espaçamento interno para evitar que os itens toquem as bordas */
+}
+
+.vagas-design h6,
+.vagas-dev h6 {
+    color: var(--dark-text-color); /* Título das categorias */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: left; /* Alinha o título à esquerda */
+    width: 100%; /* Garante que o título ocupe toda a largura disponível */
+}
+
+.vagas-categoria-titulo {
+    margin-left: 850px;
+}
+
+.vagas-design {
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+    padding-top: 20px; /* Espaçamento superior para o título */
+}
+
+.vagas-dev {
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+    padding-top: 20px; /* Espaçamento superior para o título */
+}
+
+.vaga-info {
+    background-color: #ffffff; /* Fundo branco para cada vaga */
+    border: 1px solid #dcdcdc; /* Borda cinza clara ao redor da vaga */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Ajusta o espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do contêiner */
+    text-align: left; /* Alinha o texto à esquerda dentro do contêiner da vaga */
+    width: 100%; /* Garante que o retângulo ocupe a largura total do contêiner pai */
+    max-width: 800px; /* Define uma largura máxima para cada vaga */
+}
+
+.vaga-titulo {
+    color: var(--dark-text-color); /* Cor do texto do título da vaga */
+    margin-bottom: 10px; /* Reduz o espaço abaixo do título */
+    font-size: 24px; /* Ajusta o tamanho da fonte para os títulos das vagas */
+}
+
+.vaga-detalhes {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 20px; /* Espaço entre os itens "Full-time" e o salário */
+}
+
+.vaga-full-time,
+.vaga-salario {
+    margin: 0; /* Remove margens adicionais */
+}
+
+.separador {
+    width: 100%;
+    height: 1px; /* Altura do separador */
+    background-color: #dcdcdc; /* Cor do separador */
+    margin: 30px 0; /* Margem superior e inferior para o separador */
+}
+
+.rodape {
+    background-color: #f8f9fa; /* Cor de fundo clara para o rodapé */
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-color); /* Cor do texto definida por var(--text-color) */
+}
+
+.rodape * {
+    background: none; /* Remove qualquer fundo adicional nos elementos */
+    color: inherit; /* Garante que a cor do texto seja herdada */
+}
+
+.rodape span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #101828; /* Cor do texto em destaque */
+}
+
+.rodape p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Cor do texto legível sobre o fundo */
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    background-color: #ffffff; /* Cor de fundo clara para o campo de entrada */
+}
+
+.newsletter-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.direitos {
+    font-size: 14px; /* Ajustar o tamanho da fonte para ser legível */
+    color: var(--text-color); /* Cor do texto legível sobre o fundo */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .vaga-info {
+        width: 100%; /* Ajusta a largura máxima para telas pequenas */
+        box-sizing: border-box; /* Inclui o padding na largura total */
+    }
+}
